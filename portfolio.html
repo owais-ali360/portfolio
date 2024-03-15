@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            background: linear-gradient(-450deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, darkblue, aqua, violet);
+            background-size: 400% 400%;
+            animation: gradient 3s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Navbar Styles */
+        
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-left: 110px;
+            width: 80%;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Dropdown Styles */
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a,
+        .dropdown .dropbtn {
+            padding: 16px;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #23a6d5;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        label {
+            font-size: 40px;
+            display: flex;
+            color: lime;
+            margin-left: 10px;
+            margin-right: 200px;
+        }
+        
+        button1 {
+            color: lime;
+            background-color: blue;
+            border-radius: 20px;
+            font-size: 25px;
+            margin-left: 180px;
+            padding: 10px;
+        }
+        
+        img {
+            width: 170px;
+            height: 170px;
+            border-radius: 180px;
+            margin-left: 42px;
+        }
+        
+        div4 {
+            box-sizing: border-box;
+            width: 20%;
+            border: 2px solid blue;
+            float: left;
+            margin-top: 20px;
+            margin-left: 110px;
+            border-radius: 15px;
+        }
+        
+        button {
+            margin-left: 25%;
+            color: darkblue;
+            background-color: lime;
+            margin-top: 6%;
+            font-size: 18px;
+            border-radius: 30px;
+            padding: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-left: 60px;
+        }
+        
+        div5 {
+            font-size: 45px;
+            color: lime;
+            border: 2px solid blue;
+            box-sizing: border-box;
+            width: 18%;
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        div6 {
+            font-size: 40px;
+            color: white;
+            margin-left: 50%;
+        }
+        
+        div7 {
+            font-size: 45px;
+            color: lime;
+            border: 2px solid blue;
+            box-sizing: border-box;
+            width: 18%;
+            float: left;
+            margin-left: 20px;
+            margin-top: 15px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        div7 img {
+            height: 70px;
+            width: 70px;
+            border-radius: 15px;
+            float: left;
+            margin-top: 20px;
+        }
+        
+        div7 h4 {
+            color: lime;
+            font-size: 30px;
+        }
+        
+        div8 {
+            font-size: 45px;
+            color: lime;
+            border: 2px solid blue;
+            box-sizing: border-box;
+            width: 38%;
+            float: left;
+            border-radius: 15px;
+            text-align: center;
+            margin-left: -500px;
+            margin-top: 180px;
+        }
+        
+        div8 img {
+            height: 70px;
+            width: 70px;
+            border-radius: 17px;
+            float: left;
+        }
+        
+        div8 h2 {
+            color: white;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+        
+        div8 h2 img {
+            height: 30px;
+            width: 30px;
+            margin-left: 450px;
+            margin-top: -35px;
+        }
+        
+        div8 p {
+            font-size: 13px;
+            color: white;
+            float: left;
+            padding: 17px;
+        }
+        
+        div8 h3 {
+            font-size: 25px;
+            color: white;
+            margin-left: -250px;
+            margin-top: 30px;
+        }
+        
+        div9 {
+            font-size: 45px;
+            color: lime;
+            border: 2px solid blue;
+            box-sizing: border-box;
+            width: 21%;
+            float: left;
+            border-radius: 15px;
+            text-align: center;
+            margin-left: -60%;
+            margin-top: 300px;
+        }
+        
+        div9 h3 {
+            color: white;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-left: -90px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <label for="logo">BentoX</label>
+        <div class="dropdown">
+            <button class="dropbtn">Home 
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="#home 1">Home 1</a>
+                <a href="#home 2">Home 2</a>
+            </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <button1>
+            Lets Talk
+        </button1>
+    </div>
+    <div4>
+
+        <img src="sample.jpg" alt="Man">
+
+        <button>I'am Henry</button>
+        <br>
+        <a href="#">Biograpgy  --></a>
+    </div4>
+    <div5>
+        Title...
+        <div6><br><i>Product <br> Designer</i></div6>
+    </div5>
+    <div7>
+        <img src="behance.png" alt="#">
+        <img src="instagram.png" alt="#">
+        <h4>Profiles >>></h4>
+    </div7>
+    <div8>
+        Services Offering<br>
+        <img src="digital.png" alt="digital markiting">
+        <img src="coding.png" alt="web designing">
+        <img src="design.png" alt="ui/ux designing">
+        <img src="branding.png" alt="brand making"><br>
+        <p> Digital Marketing</p>
+        <p>Web development</p>
+        <p>UI/UX Designer</p>
+        <p>Brand Identity</p>
+        <h2>Things I'am Good AT <img src="thumb.png" alt="thumb-up"></h2>
+        <h3> All Services -->>>></h3>
+    </div8>
+    <div9>Articles & <br>Publications
+        <h3>All Blogs ....>>>></h3>
+    </div9>
+</body>
+
+</html>
